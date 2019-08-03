@@ -28,8 +28,6 @@ parent.appendChild(ttt);
 
 
 
-
-
 var clik = () =>
 {
 let clik=document.getElementById('qwe');
@@ -58,54 +56,16 @@ if (myData.length !=0)
 
 //////////////////////////////////////////////////////////////////////////////////////////
  
-//var del;
-
-let stroka0 = document.createElement('tr');
-let stolbb0 = document.createElement('td');
-stolbb0.innerHTML="№";
-let stolbb1 = document.createElement('td');
-stolbb1.innerHTML="Должность";
-let stolbb2 = document.createElement('td');
-stolbb2.innerHTML="Фамилия";
-let stolbb3 = document.createElement('td');
-stolbb3.innerHTML="Имя";
-let stolbb4 = document.createElement('td');
- stolbb4.innerHTML="Отчество";
-let stolbb5 = document.createElement('td');
- stolbb5.innerHTML="Возраст, лет";
-let stolbb6 = document.createElement('td');
- stolbb6.innerHTML="Наличие детей";
-let stolbb7 = document.createElement('td');
- stolbb7.innerHTML="Общий трудовой стаж, лет";
-let stolbb8 = document.createElement('td');
- stolbb8.innerHTML="Образование";
-let stolbb9 = document.createElement('td');
- stolbb9.innerHTML="Адрес";
-let stolbb10 =document.createElement('td');
- stolbb10.innerHTML="Телефон";
-let stolbb11 =document.createElement('td');
- stolbb11.innerHTML="Е-маил";
-let stolbb12 =document.createElement('td');
- stolbb12.innerHTML="Наличие автомобиля";
-let stolbb13 = document.createElement('td');
- stolbb13.innerHTML="Примечание";
-
+ var titl=["№", "Должность", "Фамилия", "Имя", "Отчество", "Возраст, лет", "Наличие детей", "Общий трудовой стаж, лет", "Образование", "Адрес", "Телефон", "Е-маил", "Наличие автомобиля", "Примечание"];
+var stroka0 = document.createElement('tr');
+for (var i = 0; i < 14; i++) 
+{
+var as = document.createElement('td');
+//as.id="tdd"+i;
+as.innerHTML=titl[i];
+stroka0.appendChild(as);
+}
 document.getElementById("t").appendChild(stroka0);
-
-document.getElementById("t").appendChild(stolbb0);
-document.getElementById("t").appendChild(stolbb1);
-document.getElementById("t").appendChild(stolbb2);
-document.getElementById("t").appendChild(stolbb3);
-document.getElementById("t").appendChild(stolbb4);
-document.getElementById("t").appendChild(stolbb5);
-document.getElementById("t").appendChild(stolbb6);
-document.getElementById("t").appendChild(stolbb7);
-document.getElementById("t").appendChild(stolbb8);
-document.getElementById("t").appendChild(stolbb9);
-document.getElementById("t").appendChild(stolbb10);
-document.getElementById("t").appendChild(stolbb11);
-document.getElementById("t").appendChild(stolbb12);
-document.getElementById("t").appendChild(stolbb13);
 
 
 //let{[dolg, family, name, otch, age, child, staj, educat, address, phone, mail, auto]}=myData;

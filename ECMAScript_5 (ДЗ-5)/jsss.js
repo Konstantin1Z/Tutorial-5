@@ -58,6 +58,7 @@ let inp1=document.createElement('input');
 inp1.setAttribute("type","text");
 inp1.setAttribute("name","fam");
 inp1.setAttribute("placeholder","Фамилия");
+inp1.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp1.setAttribute("required","");
 inp1.id="fam";
 //////////////////////////////////////////////////////////////// Имя
@@ -69,6 +70,7 @@ let inp2=document.createElement('input');
 inp2.setAttribute("type","text");
 inp2.setAttribute("name","im");
 inp2.setAttribute("placeholder","Имя");
+inp2.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp2.setAttribute("required","");
 inp2.id="im";
 //////////////////////////////////////////////////////////////// Отчество
@@ -80,6 +82,7 @@ let inp3=document.createElement('input');
 inp3.setAttribute("type","text");
 inp3.setAttribute("name","otch");
 inp3.setAttribute("placeholder","Отчество");
+inp3.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp3.setAttribute("required","");
 inp3.id="otch";
 //////////////////////////////////////////////////////////////// birthday
@@ -88,9 +91,11 @@ let td9=document.createElement('td');
 td9.innerHTML="Возраст, лет";
 let td10=document.createElement('td');
 let inp4=document.createElement('input');
-inp4.setAttribute("type","text");
+inp4.setAttribute("type","number");
 inp4.setAttribute("name","date");
 inp4.setAttribute("placeholder","Лет");
+inp4.setAttribute("min","18");
+inp4.setAttribute("max","99");
 inp4.setAttribute("required","");
 inp4.id="date";
 //////////////////////////////////////////////////////////////// childrens
@@ -287,14 +292,6 @@ td25.appendChild(b2);
 
 c.appendChild(b3);
 c.appendChild(b4);
-
-
-
-
-
-
-
-
 
 
 const id = localStorage.getItem("idRec");

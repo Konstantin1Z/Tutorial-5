@@ -69,6 +69,7 @@ let inp1=document.createElement('input');
 inp1.setAttribute("type","text");
 inp1.setAttribute("name","fam");
 inp1.setAttribute("placeholder","Фамилия");
+inp1.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp1.setAttribute("required","");
 inp1.id="fam";
 //////////////////////////////////////////////////////////////// Имя
@@ -80,6 +81,7 @@ let inp2=document.createElement('input');
 inp2.setAttribute("type","text");
 inp2.setAttribute("name","im");
 inp2.setAttribute("placeholder","Имя");
+inp2.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp2.setAttribute("required","");
 inp2.id="im";
 //////////////////////////////////////////////////////////////// Отчество
@@ -91,6 +93,7 @@ let inp3=document.createElement('input');
 inp3.setAttribute("type","text");
 inp3.setAttribute("name","otch");
 inp3.setAttribute("placeholder","Отчество");
+inp3.setAttribute("pattern","^[a-zA-Zа-яА-Я]+$");
 inp3.setAttribute("required","");
 inp3.id="otch";
 //////////////////////////////////////////////////////////////// birthday
